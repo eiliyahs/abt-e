@@ -1,0 +1,218 @@
+body {
+    font-family: 'Yuji Syuku', serif;
+}
+
+.peek {
+    width: 55%;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 86%;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+p, li, td {
+    font-size: 2em;
+}
+
+.two {
+    width:86%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heart {
+    width: 29%;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    color: white;
+}
+
+.left {
+    text-align: right;
+}
+
+.tablecenter {
+    display:flex;
+    justify-content: center;
+}
+
+button {
+    font-family: 'Yuji Syuku', serif;
+    font-size: 2em;
+    background-color:rgba(127,99,237,1);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 5px 10px white;
+}
+
+#bar {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links {
+    display:flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+#hamburger-checkbox {
+    display: none;
+}
+
+#sidebar {
+    display: none;
+}
+
+.nav-link {
+    font-size: 2em;
+    color: white;
+}
+
+#bar {
+    background-color: rgba(127,99,237,1);
+}
+
+a {
+    text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
+.nav-link:visited {
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: black;
+}
+ 
+.choices {
+    display: inline-flex;
+    align-items: center;
+}
+
+.quizzes-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 900px) {
+    .peek {
+        width: 100%;
+    }
+
+    .one {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .two {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .heart {
+        width: 100%;
+    }
+
+    .hi {
+        text-align: center;
+    }
+
+    p, li, td {
+        font-size: 1.6em;
+    }
+
+    #center-page {
+        text-align: left;
+        font-size: 3vh;
+        padding-top: 30%;
+    }
+
+    #hamburger-menu {
+        visibility: visible;
+    }
+
+    #links {
+        visibility: hidden;
+    }
+
+    #sidebar {
+        display: flex;
+    }
+
+    #hamburger-menu {
+        background-image: url(menu.svg);
+        width: 50px;
+        height: 50px;
+        display: block;
+        border: none;
+        padding: 0px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    
+    #hamburger-checkbox {
+        opacity: 0;
+    }
+    
+    #hamburger-checkbox:checked ~ #sidebar {
+        opacity: 100;
+    }
+    
+    #sidebar li {
+        list-style-type: none;
+    }
+    
+    #sidebar ul {
+        padding: 0px;
+    }
+    
+    #sidebar a {
+        font-size: 1.5em;
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+    #sidebar {
+        position: absolute;
+        width: 200px;
+        background-color: rgba(127,99,237,1);
+        right: 0px;
+        top: 40px;
+        transition: 0.3s;
+        opacity: 0;
+    }
+}
